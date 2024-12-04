@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stars in Graz</title>
+</head>
+
+<body>
+    <nav id="navigation">
+        <ul
+            style="display: flex; justify-content: center; gap: 50px; list-style-type: none; padding: 30px; background-color: #060221; color: white;   position: -webkit-sticky;position: sticky; top: 0;">
+            <li><a href="#landing" style="color: white; text-decoration: none;">Главная</a></li>
+            <li><a href="#schedule" style="color: white; text-decoration: none;">Расписание концертов</a></li>
+            <li><a href="#reviews-tickets" style="color: white; text-decoration: none;">Купить билеты</a></li>
+            <li><a href="#reviews-tickets" style="color: white; text-decoration: none;">Отзывы</a></li>
+            <li><a href="#faq" style="color: white; text-decoration: none;">Часто задаваемые вопросы</a></li>
+        </ul>
+    </nav>
+    <!-- MVP – Итерация 1 -->
+    <section id="landing">
+        <div
+            style="height: 60vh; width: 55vh; display: flex; justify-content: center; align-items: center; text-align: center; background-image: url('weekendalbum.jpg'); background-size: cover; background-position: center; border-radius: 50px;">
+            <div>
+                <h1>Stars in Graz</h1>
+                <p>30.11.2021</p>
+                <p>Messe Congress Graz</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- MMP – Итерация 2 -->
+
+    <section id="schedule" style="padding: 20px;">
+    
+        <div class="concerts-container">
+            <div class="concert-card">
+                <img src="мияиг.webp" alt="Артист 1" class="concert-image">
+                <h3 class="artist-name">Myagi</h3>
+                <p class="concert-date">Дата: 21.05.2025</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="concert-card">
+                <img src="уннв.jpg" alt="Артист 2" class="concert-image">
+                <h3 class="artist-name">УННВ</h3>
+                <p class="concert-date">Дата: 01.02.2024</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="concert-card">
+                <img src="майкл.webp" alt="Артист 3" class="concert-image">
+                <h3 class="artist-name">Майкл Джексон</h3>
+                <p class="concert-date">Дата: 14..2024</p>
+                <button class="add-button">+</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="reviews-tickets">
+
+        <div id="tickets-container">
+            <h2>Купить билеты</h2>
+    
+            <!-- Форма покупки билета -->
+            <div class="form-container">
+                <form style="max-width: 400px; margin: 0 auto; text-align: left;">
+                    <div style="margin-bottom: 15px;">
+                        <label for="name" style="display: block; font-weight: bold;">Имя:</label>
+                        <input type="text" id="name" name="name" required
+                            style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+    
+                    <div style="margin-bottom: 15px;">
+                        <label for="phone" style="display: block; font-weight: bold;">Номер телефона:</label>
+                        <input type="tel" id="phone" name="phone" required
+                            style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+    
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; font-weight: bold;">Почта:</label>
+                        <input type="email" id="email" name="email" required
+                            style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+    
+                    <!-- Кнопка покупки билета -->
+                    <button type="submit">Купить билет</button>
+                </form>
+            </div>
+        </div>
+    <div id="reviews-container">
+        <h2>Отзывы</h2>
+
+        <!-- Отзыв 1 -->
+        <div class="review">
+            <img src="1ава.jpg" alt="Иван Иванов" class="review-photo">
+            <blockquote>
+                <p class="review-text">Невероятное шоу! Это было одно из лучших выступлений, которые я когда-либо видел.
+                    Мияги и его команда задали просто сумасшедшую энергетику с первых секунд. Все треки звучали мощно, с потрясающими битами, глубокими текстами и идеальной атмосферой. Каждая песня — это отдельная история, которая проникает в душу, а его голос вживую завораживает даже сильнее, чем в студийных записях. Особенно впечатлило, как зал подхватывал припевы, создавая атмосферу единства. Ушел с концерта с чувством полного восторга!</p>
+                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+
+        <!-- Отзыв 2 -->
+        <div class="review">
+            <img src="2ава.png" alt="Анна Смирнова" class="review-photo">
+            <blockquote>
+                <p class="review-text">Это было магически! Концерт УННВ — это не просто музыка, это легенда,
+                    которая оживает на сцене. Каждая композиция напоминала о золотой эпохе их творчества.
+                    Треки "День, ночь" и "Осень" буквально всколыхнули весь зал, погружая в глубину их лирики.
+                    А искренность и энергетика, которые они передавали через свои выступления, добавили этому вечеру
+                    особую эмоциональную глубину. Незабываемый опыт, который невозможно сравнить ни с чем другим!</p>
+                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+
+        <!-- Отзыв 3 -->
+        <div class="review">
+            <img src="3ава.webp" alt="Олег Петров" class="review-photo">
+            <blockquote>
+                <p class="review-text">Настоящий взрыв эмоций! Майкл Джексон на сцене — это мощь и магия в чистом виде.
+                    Каждое его движение и вокал отдавались на 100%, а его взаимодействие с аудиторией заставляло чувствовать себя частью чего-то легендарного.
+                    "Billie Jean" и "Thriller" прозвучали настолько мощно, что мурашки пробежали по коже, а танцевальные номера словно оживляли саму музыку.
+                    Световое шоу и хореография идеально дополняли каждую песню, создавая незабываемую атмосферу. Это был вечер, который я буду вспоминать еще очень долго!</p>
+                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+    </div>
+    
+    </section>
+
+    <section id="faq" style="padding: 50px; text-align: center;">
+        <h2>Часто задаваемые вопросы</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Когда состоится следующий концерт?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>След концерт "УННВ" начнется 01.02.2024 в 18.00 вечера.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Как купить билеты?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Используйте форму "Купить билеты" на этой странице.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Можно ли вернуть билеты?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Билеты можно вернуть за 24 часа до начала концерта.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Есть ли возрастные ограничения?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Концерт доступен начиная с возраста 18 лет.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const concertsContainer = document.querySelector('.concerts-container');
+        const concertCards = document.querySelectorAll('.concert-card');
+
+        let currentIndex = 0;
+
+        function updateConcerts() {
+            concertCards.forEach((card, index) => {
+                card.style.display = (index >= currentIndex && index < currentIndex + 3) ? 'block' : 'none';
+            });
+        }
+
+  
+
+        // Инициализируем отображение
+        updateConcerts();
+
+        // Ограничение ввода в поле имени
+        document.getElementById('name').addEventListener('input', function (e) {
+            this.value = this.value.replace(/[^a-zA-ZА-Яа-яЁё\s]/g, '');
+        });
+
+        // Ограничение ввода в поле телефона
+        document.getElementById('phone').addEventListener('input', function (e) {
+            this.value = this.value.replace(/[^0-9\+\s\-]/g, '');
+        });
+
+        document.querySelectorAll('#reviews blockquote').forEach(function (blockquote) {
+            blockquote.addEventListener('click', function () {
+                blockquote.classList.toggle('expanded');
+                let readMore = blockquote.querySelector('.read-more');
+                if (blockquote.classList.contains('expanded')) {
+                    readMore.textContent = 'Свернуть';
+                } else {
+                    readMore.textContent = 'Читать полностью';
+                }
+            });
+        });
+
+        document.querySelectorAll('.faq-item').forEach(function (item) {
+            item.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
