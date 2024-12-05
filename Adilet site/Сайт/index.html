@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stars in Graz</title>
+    <style>
+        h2 {
+            text-align: center; /* Выравнивание текста по центру */
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navigation">
+        <ul
+            style="display: flex; justify-content: center; gap: 50px; list-style-type: none; padding: 30px; background-color: #060221; color: white;   position: -webkit-sticky;position: sticky; top: 0;">
+            <li><a href="#landing" style="color: white; text-decoration: none;">Главная</a></li>
+            <li><a href="#schedule" style="color: white; text-decoration: none;">Расписание концертов</a></li>
+            <li><a href="#reviews-tickets" style="color: white; text-decoration: none;">Купить билеты</a></li>
+            <li><a href="#reviews-tickets" style="color: white; text-decoration: none;">Отзывы</a></li>
+            <li><a href="#faq" style="color: white; text-decoration: none;">Часто задаваемые вопросы</a></li>
+        </ul>
+    </nav>
+    <!-- MVP – Итерация 1 -->
+    <section id="landing">
+        <div
+            style="height: 60vh; width: 55vh; display: flex; justify-content: center; align-items: center; text-align: center; background-image: url('weekendalbum.jpg'); background-size: cover; background-position: center; border-radius: 50px;">
+            <div>
+                <h1>Stars in Graz</h1>
+                <p>30.11.2021</p>
+                <p>Messe Congress Graz</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- MMP – Итерация 2 -->
+
+    <section id="schedule" style="padding: 20px;">
+    
+        <div class="concerts-container">
+            <div class="concert-card">
+                <img src="Кино.jpg" alt="Артист 1" class="concert-image">
+                <h3 class="artist-name">Кино</h3>
+                <p class="concert-date">Дата: 19.11.2024</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="concert-card">
+                <img src="ДосМухасан.jpg" alt="Артист 2" class="concert-image">
+                <h3 class="artist-name">Дос Мухасан</h3>
+                <p class="concert-date">Дата: 17.10.2024</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="concert-card">
+                <img src="наут.jpg" alt="Артист 3" class="concert-image">
+                <h3 class="artist-name">Nautilus Pompilius</h3>
+                <p class="concert-date">Дата: 14.07.2024</p>
+                <button class="add-button">+</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="reviews-tickets">
+
+        <div id="tickets-container">
+            <h2>Купить билеты</h2>
+    
+            <!-- Форма покупки билета -->
+            <div class="form-container">
+                <form style="max-width: 400px; margin: 0 auto; text-align: left;">
+                    <div style="margin-bottom: 15px;">
+                        <label for="name" style="display: block; font-weight: bold;">Имя:</label>
+                        <input type="text" id="name" name="name" required
+                            style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+    
+                    <div style="margin-bottom: 15px;">
+                        <label for="phone" style="display: block; font-weight: bold;">Номер телефона:</label>
+                        <input type="tel" id="phone" name="phone" required
+                            style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+    
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; font-weight: bold;">Почта:</label>
+                        <input type="email" id="email" name="email" required
+                            style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+    
+                    <!-- Кнопка покупки билета -->
+                    <button type="submit">Купить билет</button>
+                </form>
+            </div>
+        </div>
+    <div id="reviews-container">
+        <h2>Отзывы</h2>
+
+        <!-- Отзыв 1 -->
+        <div class="review">
+            <img src="1ава.webp" alt="Иван Иванов" class="review-photo">
+            <blockquote>
+                <p class="review-text">Невероятное шоу! Это было одно из лучших выступлений, которые я когда-либо видел.
+                    Недавно побывал на концерте группы «Кино» — это было что-то невероятное! Атмосфера просто зашкаливала. С первых аккордов зал буквально взорвался, и мы все словно стали единым целым, погружаясь в звучание гитар и голос Виктора Цоя.
+
+Песни такие как «Группа крови» или «Звезда по имени Солнце» исполнялись с такой энергией, что мурашки бежали по коже. Люди вокруг подпевали каждую строчку, и было ясно, что эти тексты — больше, чем просто слова. Это о нашей жизни, наших мечтах и боли.
+
+Световое оформление и простая, но мощная подача только усиливали эффект. Этот концерт останется в памяти надолго — чувствуешь, что побывал на чем-то по-настоящему большом и важном. Настоящая легенда.                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+
+        <!-- Отзыв 2 -->
+        <div class="review">
+            <img src="2ава.jpg" alt="Анна Смирнова" class="review-photo">
+            <blockquote>
+                <p class="review-text">Побывал на концерте группы "Пампилиус" (предположительно вы имели в виду группу «Пикник», если нет, уточните). Это было завораживающее и магическое шоу! С первых минут погружаешься в мистическую атмосферу, создаваемую их музыкой, голосом лидера и необычным оформлением сцены.
+
+                    Звучание — уникальное: от загадочных мелодий до ярких, цепляющих ритмов. Лирика глубокая и многослойная, она заставляет задуматься, погружает в философские размышления. Особенное впечатление оставляют хиты вроде «У шамана три руки» или «Фиолетово-чёрный».
+                    
+                    На сцене — невероятный синтез музыки, света и театрального представления. Всё это создает ощущение, что ты оказался где-то за гранью реальности. Настоящий праздник для тех, кто любит музыку с душой и смыслом.</p>
+                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+
+        <!-- Отзыв 3 -->
+        <div class="review">
+            <img src="3ава.jpg" alt="Олег Петров" class="review-photo">
+            <blockquote>
+                <p class="review-text">Музыка Dos Mukasan — это удивительное сочетание мелодий, вдохновленных казахской народной культурой, и современных для того времени западных ритмов. Их звучание поражает своей теплотой и гармонией. Каждая композиция — это история, которая увлекает в путешествие по степям, воспевая красоту родной земли.
+
+                    На концерте чувствуется живая энергетика музыкантов и искренность исполнения. Хиты вроде «Той жыры» или «Су тасушы қыз» пробуждают ностальгию и трогают до глубины души. Если вы любите музыку, в которой соединяются традиции и современность, выступление Dos Mukasan — это обязательное к посещению событие!</p>
+                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+    </div>
+    
+    </section>
+
+    <section id="faq" style="padding: 50px; text-align: center;">
+        <h2>Часто задаваемые вопросы</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Когда состоится следующий концерт?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>След концерт "УННВ" начнется 01.02.2024 в 18.00 вечера.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Как купить билеты?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Используйте форму "Купить билеты" на этой странице.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Можно ли вернуть билеты?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Билеты можно вернуть за 24 часа до начала концерта.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Есть ли возрастные ограничения?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Концерт доступен начиная с возраста 18 лет.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const concertsContainer = document.querySelector('.concerts-container');
+        const concertCards = document.querySelectorAll('.concert-card');
+
+        let currentIndex = 0;
+
+        function updateConcerts() {
+            concertCards.forEach((card, index) => {
+                card.style.display = (index >= currentIndex && index < currentIndex + 3) ? 'block' : 'none';
+            });
+        }
+
+  
+
+        // Инициализируем отображение
+        updateConcerts();
+
+        // Ограничение ввода в поле имени
+        document.getElementById('name').addEventListener('input', function (e) {
+            this.value = this.value.replace(/[^a-zA-ZА-Яа-яЁё\s]/g, '');
+        });
+
+        // Ограничение ввода в поле телефона
+        document.getElementById('phone').addEventListener('input', function (e) {
+            this.value = this.value.replace(/[^0-9\+\s\-]/g, '');
+        });
+
+        document.querySelectorAll('#reviews blockquote').forEach(function (blockquote) {
+            blockquote.addEventListener('click', function () {
+                blockquote.classList.toggle('expanded');
+                let readMore = blockquote.querySelector('.read-more');
+                if (blockquote.classList.contains('expanded')) {
+                    readMore.textContent = 'Свернуть';
+                } else {
+                    readMore.textContent = 'Читать полностью';
+                }
+            });
+        });
+
+        document.querySelectorAll('.faq-item').forEach(function (item) {
+            item.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

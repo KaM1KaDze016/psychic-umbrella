@@ -1,0 +1,221 @@
+/* Общий стиль для страницы */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e;
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+
+/* Навигация */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 20px;
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #444444;
+    color: #fff;
+}
+
+/* Секция "Главная" */
+#landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    background-image: url('weekendalbum.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+#landing h1 {
+    color: #e5e5e5;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Карточки концертов */
+.concerts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.concert-card {
+    background-color: #2c2c2e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.concert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+.concert-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #444444;
+}
+
+.artist-name {
+    font-size: 1.5rem;
+    color: #e5e5e5;
+    margin: 10px 0;
+}
+
+.concert-date {
+    color: #a5a5a5;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    background-color: #444444;
+    color: #e5e5e5;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.add-button:hover {
+    background-color: #5e5e5e;
+}
+
+/* Форма покупки билетов */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2c2c2e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.form-container input, .form-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    background-color: #1c1c1e;
+    color: #e5e5e5;
+}
+
+.form-container button {
+    background-color: #444444;
+    color: #e5e5e5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #5e5e5e;
+}
+
+/* Раздел с отзывами */
+#reviews-container {
+    padding: 20px;
+}
+
+.review {
+    display: flex;
+    gap: 20px;
+    background-color: #2c2c2e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.review-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #444444;
+}
+
+.review blockquote {
+    font-style: italic;
+    margin: 0;
+    color: #a5a5a5;
+}
+
+.read-more {
+    color: #5e5e5e;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Часто задаваемые вопросы (FAQ) */
+#faq {
+    background-color: #1c1c1e;
+    color: #e5e5e5;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.faq-item {
+    background-color: #2c2c2e;
+    color: #e5e5e5;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.faq-item .faq-answer {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-toggle {
+    float: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e5e5e5;
+}
